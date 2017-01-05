@@ -1,0 +1,51 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="cse5236.pinpoint.NewPostFragment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/newPostLayout"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentBottom="true"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/newPostLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"/>
+
+    <EditText
+        android:id="@+id/newPostSubject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newPostLocation"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginStart="35dp"
+        android:hint="@string/new_post_subject_hint"/>
+
+    <EditText
+        android:id="@+id/newPostContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="2"
+        android:layout_below="@+id/newPostSubject"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginStart="35dp"
+        android:hint="@string/new_post_message_hint" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/newPostFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/newPostContent"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_add_white_24dp"/>
+
+</RelativeLayout>
